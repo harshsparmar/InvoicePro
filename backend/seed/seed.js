@@ -9,28 +9,28 @@ dotenv.config();
 
 const customerSeed = [
   {
-    name: "Avery Stone",
-    email: "avery@northpeak.io",
-    phone: "+1 555-210-8811",
-    address: "1201 Market Street, San Francisco, CA"
+    name: "Rahul Sharma",
+    email: "rahul.sharma@techvora.in",
+    phone: "+91 98765-43210",
+    address: "402, Signature Towers, Gurgaon, Haryana"
   },
   {
-    name: "Mila Chen",
-    email: "mila@horizonlabs.co",
-    phone: "+1 555-320-4488",
-    address: "77 King West, Toronto, ON"
+    name: "Priya Patel",
+    email: "priya@innovatex.co.in",
+    phone: "+91 91234-56789",
+    address: "15, Brigade Road, Bangalore, Karnataka"
   },
   {
-    name: "Daniel Brooks",
-    email: "daniel@paperplane.studio",
-    phone: "+1 555-678-9910",
-    address: "18 Riverfront Plaza, Austin, TX"
+    name: "Amit Desai",
+    email: "amit.desai@cloudstry.in",
+    phone: "+91 99887-76655",
+    address: "3B, Maker Chambers, Nariman Point, Mumbai, Maharashtra"
   },
   {
-    name: "Noor Hassan",
-    email: "noor@clearscope.com",
-    phone: "+1 555-884-2109",
-    address: "901 Palm Avenue, Miami, FL"
+    name: "Sneha Reddy",
+    email: "sneha@nextgendev.in",
+    phone: "+91 98989-12121",
+    address: "Plot 45, HITEC City, Hyderabad, Telangana"
   }
 ];
 
@@ -57,21 +57,21 @@ const seedDatabase = async () => {
     buildInvoice(
       customers[0]._id,
       [
-        { name: "Dashboard Design", quantity: 1, price: 1200 },
-        { name: "UX Audit", quantity: 1, price: 450 }
+        { name: "Website Development", quantity: 1, price: 45000 },
+        { name: "Server Hosting (1 Year)", quantity: 1, price: 12000 }
       ],
-      120,
-      50,
+      10260, // 18% GST
+      2000,  // Discount
       "paid",
       new Date("2026-01-15")
     ),
     buildInvoice(
       customers[1]._id,
       [
-        { name: "Landing Page Build", quantity: 1, price: 2400 },
-        { name: "CMS Setup", quantity: 1, price: 700 }
+        { name: "Mobile App UI/UX", quantity: 1, price: 60000 },
+        { name: "API Integration", quantity: 1, price: 25000 }
       ],
-      150,
+      15300, // 18% GST
       0,
       "paid",
       new Date("2026-02-02")
@@ -79,33 +79,33 @@ const seedDatabase = async () => {
     buildInvoice(
       customers[2]._id,
       [
-        { name: "Product Illustration Set", quantity: 8, price: 180 },
-        { name: "Creative Direction", quantity: 4, price: 140 }
+        { name: "Social Media Posts (Monthly)", quantity: 8, price: 2500 },
+        { name: "Ad Campaign Management", quantity: 4, price: 5000 }
       ],
-      100,
-      80,
+      7200, // 18% GST
+      0,
       "pending",
       new Date("2026-02-24")
     ),
     buildInvoice(
       customers[3]._id,
       [
-        { name: "Performance Review", quantity: 1, price: 900 },
-        { name: "Optimization Sprint", quantity: 2, price: 650 }
+        { name: "SEO Optimization", quantity: 1, price: 15000 },
+        { name: "Content Writing (Articles)", quantity: 5, price: 2000 }
       ],
-      90,
-      0,
+      4500, // 18% GST
+      1000,
       "paid",
       new Date("2026-03-05")
     ),
     buildInvoice(
       customers[0]._id,
       [
-        { name: "Analytics Dashboard", quantity: 1, price: 1800 },
-        { name: "Reporting Integration", quantity: 1, price: 1100 }
+        { name: "E-Commerce Integration", quantity: 1, price: 35000 },
+        { name: "Payment Gateway Setup", quantity: 1, price: 8000 }
       ],
-      175,
-      100,
+      7740, // 18% GST
+      0,
       "pending",
       new Date("2026-03-11")
     )
