@@ -20,7 +20,7 @@ export default function RevenueChart({ data }) {
           <YAxis
             tick={{ fill: "#64748b", fontSize: 12 }}
             axisLine={false}
-            tickFormatter={(value) => `$${value}`}
+            tickFormatter={(value) => `₹${value}`}
           />
           <Tooltip formatter={(value) => formatCurrency(value)} />
           <Line

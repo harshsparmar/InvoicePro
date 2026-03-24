@@ -1,10 +1,10 @@
-const currency = new Intl.NumberFormat("en-US", {
+const currency = new Intl.NumberFormat("en-IN", {
   style: "currency",
-  currency: "USD",
+  currency: "INR",
   minimumFractionDigits: 2
 });
 
-const compactNumber = new Intl.NumberFormat("en-US", {
+const compactNumber = new Intl.NumberFormat("en-IN", {
   notation: "compact",
   maximumFractionDigits: 1
 });
@@ -14,7 +14,7 @@ export const formatCurrency = (value) => currency.format(Number(value || 0));
 export const formatCompactNumber = (value) => compactNumber.format(Number(value || 0));
 
 export const formatDate = (value) =>
-  new Intl.DateTimeFormat("en-US", { dateStyle: "medium" }).format(new Date(value));
+  new Intl.DateTimeFormat("en-IN", { dateStyle: "medium" }).format(new Date(value));
 
 export const formatDateInput = (value) => {
   const date = new Date(value);

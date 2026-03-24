@@ -1,4 +1,4 @@
-import { BadgeCheck, Clock3, DollarSign, FileText, PlusCircle } from "lucide-react";
+import { BadgeCheck, IndianRupee, Clock3, FileText, PlusCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -118,7 +118,7 @@ export default function DashboardPage() {
       />
 
       <div className="grid gap-6 md:grid-cols-2 2xl:grid-cols-4">
-        <StatCard title="Collected Revenue" value={dashboard.stats.totalRevenue} icon={DollarSign} />
+        <StatCard title="Collected Revenue" value={dashboard.stats.totalRevenue} icon={IndianRupee} />
         <StatCard
           title="Total Invoices"
           value={dashboard.stats.totalInvoices}

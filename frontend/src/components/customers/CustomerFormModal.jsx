@@ -65,20 +65,20 @@ export default function CustomerFormModal({
           label="Name"
           value={formData.name}
           onChange={(event) => handleChange("name", event.target.value)}
-          placeholder="Acme Inc."
+          placeholder="TechVora Pvt Ltd."
         />
         <Input
           label="Email"
           type="email"
           value={formData.email}
           onChange={(event) => handleChange("email", event.target.value)}
-          placeholder="accounts@acme.com"
+          placeholder="accounts@techvora.in"
         />
         <Input
           label="Phone"
           value={formData.phone}
           onChange={(event) => handleChange("phone", event.target.value)}
-          placeholder="+1 555-000-0000"
+          placeholder="+91 98765-43210"
         />
         <Input
           label="Address"
@@ -86,7 +86,7 @@ export default function CustomerFormModal({
           className="md:col-span-2"
           value={formData.address}
           onChange={(event) => handleChange("address", event.target.value)}
-          placeholder="Street, city, state, zip code"
+          placeholder="Street, city, state, pincode"
         />
 
         {localError || errorMessage ? (

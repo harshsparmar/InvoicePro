@@ -1,7 +1,7 @@
 import Invoice from "../models/Invoice.js";
 import asyncHandler from "../utils/asyncHandler.js";
 
-const monthFormatter = new Intl.DateTimeFormat("en-US", {
+const monthFormatter = new Intl.DateTimeFormat("en-IN", {
   month: "short",
   year: "numeric"
 });
